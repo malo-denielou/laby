@@ -581,6 +581,15 @@ sv_SV.UTF-8	Hjälp:
 tr_TR.UTF-8	Yardım:
 uk_UA.UTF-8	Допомога:
 
+text		Transfer the program to the ant
+de_DE.UTF-8	Übertrage das Programm auf die Ameise
+en_US.UTF-8	Transfer the program to the ant
+fr_FR.UTF-8	Charger le programme dans la fourmi
+pl_PL.UTF-8	Zaprogramuj mrówkę
+sl_SL.UTF-8	Prenesi program mravlji
+sv_SV.UTF-8	Flytta programmet till myran
+tr_TR.UTF-8	Programı karıncaya taşımak
+
 text		graphic interface configuration
 cs_CZ.UTF-8	nastavení rozhraní
 da_DK.UTF-8	kongiguration af grafisk brugerflade
