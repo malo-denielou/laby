@@ -185,6 +185,8 @@ let label_prog = F.x "Program:" []
 let label_mesg = F.x "Messages:" []
 let label_help = F.x "Help:" []
 
+let label_execute = F.x "Transfer the program to the ant" []
+
 let layout () =
   let scrolled ?(vpolicy=`ALWAYS) packing =
     GBin.scrolled_window ~packing ~hpolicy:`AUTOMATIC ~vpolicy ()
@@ -238,8 +240,9 @@ let layout () =
   let view_mesg = GText.view ~editable:false ~packing:sw_mesg#add  () in
   view_mesg#misc#modify_font monofont;
   let px = GMisc.image ~packing:sw_laby#add_with_viewport () in
-  let bbox = GPack.hbox ~packing:rtvbox#pack () in
-  let button_execute = GButton.button ~packing:bbox#pack ~stock:`EXECUTE () in
+  let bbox = GPack.hbox ~packing:rtvbox#pack ~homogeneous:true () in
+  let button_execute = GButton.button ~packing:bbox#pack ~relief:`NORMAL
+    ~label:(Fd.render_raw label_execute) () in
   button_execute#set_focus_on_click false;
   {
     window = window;
